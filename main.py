@@ -10,14 +10,12 @@ wallpaper1iconpath = os.path.abspath("images/icons/wallpaper1icon.png")
 wallpaper2iconpath = os.path.abspath("images/icons/wallpaper2icon.png")
 wallpaper3iconpath = os.path.abspath("images/icons/wallpaper3icon.png")
 
-pathtocustomwallpaper = "images/wallpapers/testpozadi2.jpg"
-customwallpaper = os.path.abspath(pathtocustomwallpaper)
-
 def change_wallpaper(image_path):
     # Constants for setting the wallpaper
     SPI_SETDESKWALLPAPER = 20
     SPIF_UPDATEINIFILE = 0x01
     SPIF_SENDWININICHANGE = 0x02
+    print(image_path)
 
     try:
         # Call Windows API to change wallpaper
@@ -57,10 +55,14 @@ customtext = Label(window, text="Set custom wallpaper", font=("Arial", 15, "bold
 customtext.place(x=100,y=225) # Add text "Set custom wallpaper"
 
 pathtext = Label(window, text="Path to wallpaper", font=("Arial", 10), fg="black", bg="white")
-pathtext.place(x=130,y=260)
+pathtext.place(x=145,y=260) # Add text "Path to wallpaper"
+pathtocustomwallpaper = StringVar(window)
 
-wallpaperinput = Entry(window, textvariable=pathtocustomwallpaper)
-wallpaperinput.place(x=130,y=280)
+wallpaperinput = Entry(window, textvariable=pathtocustomwallpaper, width=50)
+wallpaperinput.place(x=40,y=280) # Add input box for path to custom wallpaper
+
+setbutton = Button(window, text="Set", command=lambda:change_wallpaper(os.path.abspath(pathtocustomwallpaper.get())))
+setbutton.place(x=180,y=300) # Button that sets wallpaper as active
 
 credit = Label(window, text="by:jarabum", width=8, height=int(0.5), fg="black", bg="white")
 credit.place(x=0,y=380) # Add text for my credit :)

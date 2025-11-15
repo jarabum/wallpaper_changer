@@ -4,7 +4,8 @@ A simple wallpaper changer for windows.
 
 # Features
 
-1. Setting predetermined wallpapers
+1. Set predetermined wallpapers
+2. Set custom wallpaper from path to image
 more coming soon :)
 
 # Installation
