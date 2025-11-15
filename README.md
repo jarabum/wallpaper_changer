@@ -1,0 +1,18 @@
+# Wallpaper Changer
+
+A simple wallpaper changer for windows.
+
+# Features
+
+1. Setting predetermined wallpapers
+more coming soon :)
+
+# Installation
+
+1. Clone this repo.
+2. If needed install ctypes, os, tkinter with pip.
+3. Run main.py
+
+# Usage
+
+Well there probably isnt a reason for a normal person to use this but i wanted to make a simple wallpaper changer :)
