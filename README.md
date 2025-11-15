@@ -11,8 +11,9 @@ more coming soon :)
 # Installation
 
 1. Clone this repo.
-2. If needed install ctypes, os, tkinter with pip.
-3. Run main.py
+2. Install Python
+3. If needed install ctypes, os, tkinter with pip.
+4. Run main.py
 
 # Usage
 
