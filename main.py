@@ -35,10 +35,15 @@ def slideshow():
     window.destroy()
     os.system("python slideshow.py")
 
+# Function for opening video window
+def video():
+    window.destroy()
+    os.system("python video.py")
+
 # Main window settings
 window = Tk() # Instantiate an instance of a window
 # Some window settings
-window.geometry("400x400")
+window.geometry("400x450")
 window.title("Wallpaper Changer - menu :)")
 window.config(background="white")
 window.resizable(False, False)
@@ -83,11 +88,16 @@ wallpaperinput.place(x=45,y=280)
 setbutton = Button(window, text="Set", command=lambda:change_wallpaper(os.path.abspath(pathtocustomwallpaper.get())))
 setbutton.place(x=185,y=310)
 
+# Button that opens slideshow window
 slideshowbutton = Button(window, text="Create wallpaper slideshow", command=lambda:slideshow())
 slideshowbutton.place(x=125,y=350)
 
+# Button that opens video window
+slideshowbutton = Button(window, text="Set wallpaper video", command=lambda:video())
+slideshowbutton.place(x=145,y=380)
+
 # Add text for my credit :)
 credit = Label(window, text="by:jarabum", width=8, height=int(0.5), fg="black", bg="white")
-credit.place(x=0,y=380)
+credit.place(x=0,y=430)
 
 window.mainloop() # Create window for GUI
