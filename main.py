@@ -58,11 +58,11 @@ pathtext = Label(window, text="Path to wallpaper", font=("Arial", 10), fg="black
 pathtext.place(x=145,y=260) # Add text "Path to wallpaper"
 pathtocustomwallpaper = StringVar(window)
 
-wallpaperinput = Entry(window, textvariable=pathtocustomwallpaper, width=50)
-wallpaperinput.place(x=40,y=280) # Add input box for path to custom wallpaper
+wallpaperinput = Entry(window, textvariable=pathtocustomwallpaper, width=50, bd=2.5)
+wallpaperinput.place(x=45,y=280) # Add input box for path to custom wallpaper
 
 setbutton = Button(window, text="Set", command=lambda:change_wallpaper(os.path.abspath(pathtocustomwallpaper.get())))
-setbutton.place(x=180,y=300) # Button that sets wallpaper as active
+setbutton.place(x=185,y=310) # Button that sets wallpaper as active
 
 credit = Label(window, text="by:jarabum", width=8, height=int(0.5), fg="black", bg="white")
 credit.place(x=0,y=380) # Add text for my credit :)
