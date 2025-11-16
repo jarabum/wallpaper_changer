@@ -6,6 +6,7 @@ A simple wallpaper changer for windows.
 
 1. Set predetermined wallpapers
 2. Set custom wallpaper from path to image
+3. Create wallpaper slideshow
 more coming soon :)
 
 # Installation
