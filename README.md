@@ -1,6 +1,7 @@
 # Wallpaper Changer
 
 A simple wallpaper changer for windows.
+This is for personal use so there will probably be some bugs
 
 # Features
 
