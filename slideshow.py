@@ -75,7 +75,7 @@ def start():
     slideshowwin.resizable(False, False)
 
     # Add text "Leave me open for slideshow"
-    slideshowtext = Label(slideshowwin, text="Leave me open for slideshow", font=("Arial", 10, "bold"), fg="black", bg="white")
+    slideshowtext = Label(slideshowwin, text="Close me to end slideshow", font=("Arial", 10, "bold"), fg="black", bg="white")
     slideshowtext.pack()
 
     # Run slideshow
