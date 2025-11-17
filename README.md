@@ -9,12 +9,12 @@ This is for personal use so there will probably be some bugs
 2. Set custom wallpaper from path to image
 3. Create wallpaper slideshow
 4. Set video wallpaper
-more coming soon :)
+5. "Multiple monitor support"
 
 # Support
 
-Only 1 monitor support in video wallpapers
-Only windows, linux not tested
+Only windows, linux not tested <br>
+This software is HEAVILY unoptimised so i dont recommend for anyone to use this
 
 # Installation
 
